@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background:linear-gradient(90deg,rgb(108, 108, 241),rgb(241, 89, 221));
+}
+section{
+    display: grid;
+    place-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 18px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    animation: jump linear 5s infinite alternate-reverse;
+}
+@keyframes jump {
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(-50px);
+    }
+}
+section h3{
+    width: 240px;
+    font-size: 19px;
+    color: hsl(218, 44%, 22%);
+}
+section p{
+    width: 220px;
+    word-spacing: 2px;
+    font-size: 13px;
+    color: hsl(220, 15%, 55%);
+}
+section img{
+    width: 250px;
+    border-radius: 10px;
+}
